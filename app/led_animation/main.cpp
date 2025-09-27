@@ -2,6 +2,7 @@
 
 #include <Adafruit_NeoPixel.h>
 #include <Arduino.h>
+#include <pixel_animations/color.h>
 #include <pixel_animations/oscillationanimation.h>
 #include <pixel_animations/parallelanimation.h>
 #include <pixel_animations/slicedpixelcontroller.h>
@@ -29,7 +30,7 @@ void setup()
   animation = std::make_unique<ParallelAnimation>(std::move(animations));
 
   neoPixel.begin();
-  neoPixel.setBrightness(70);
+  neoPixel.setBrightness(255);
   pinMode(NEnablePin, OUTPUT);
   digitalWrite(NEnablePin, LOW);
 }
