@@ -1,4 +1,4 @@
-#include "neo_pixel_controller.h"
+#include "neopixelcontroller.h"
 
 #include <Adafruit_NeoPixel.h>
 

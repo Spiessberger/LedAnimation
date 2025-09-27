@@ -1,4 +1,4 @@
-#include "neo_pixel_controller.h"
+#include "neopixelcontroller.h"
 
 #include <Adafruit_NeoPixel.h>
 #include <Arduino.h>
@@ -37,7 +37,7 @@ void setup()
 
 int frameCount = 0;
 const int frameRate = 30;
-const int frameTime = 1000 / 30;
+const int frameTime = 1000 / frameRate;
 
 void loop()
 {
